@@ -1,0 +1,51 @@
+.section {
+    background-color: #f2f2f2;
+    padding: 10px;
+    padding-bottom: 50px;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    z-index: 3;
+    position: relative;
+    font-family: "Barlow";
+}
+.title-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.title-service-name {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.title-service-name-last{
+    margin-left: 5px;
+    color: #4eb29f;
+}
+
+.title-service-description {
+    margin-right: 100px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.title-content{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-box {
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+}

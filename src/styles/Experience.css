@@ -1,0 +1,20 @@
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    font-family: "Barlow";
+}
+.experience-section-title{
+    margin-top: 50px;
+    text-align: center;
+}
+.experience-section-title-first{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.experience-section-title-last{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 5px;
+    color: #4eb29f;
+}

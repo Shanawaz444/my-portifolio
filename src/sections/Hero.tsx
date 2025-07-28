@@ -1,20 +1,28 @@
 import React from "react";
 import "../styles/Hero.css";
 
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+
 const Hero: React.FC = () => {
   return (
     <section className="hero-section">
       {/* Navigation Bar */}
       <nav className="navbar">
-        <ul className="nav-links">
-          <li className="nav-item active">Home</li>
-          <li className="nav-item">About</li>
-          <li className="nav-item">Service</li>
-          <li className="nav-item">Resume</li>
-          <li className="nav-item">Project</li>
-          <li className="nav-item">Contact</li>
-        </ul>
-      </nav>
+  <ul className="nav-links">
+    <li className="nav-item" onClick={() => scrollToSection('home')}>Home</li>
+    <li className="nav-item" onClick={() => scrollToSection('about')}>About</li>
+    <li className="nav-item" onClick={() => scrollToSection('service-section')}>Service</li>
+    <li className="nav-item" onClick={() => scrollToSection('resume')}>Resume</li>
+    <li className="nav-item" onClick={() => scrollToSection('ProjectSection')}>Project</li>
+    <li className="nav-item" onClick={() => scrollToSection('contact')}>Contact</li>
+  </ul>
+</nav>
 
       {/* Hero Main Content */}
       <div className="hero-content">
@@ -33,7 +41,7 @@ const Hero: React.FC = () => {
                 className="quote-img"
               />
             </div>
-            <p>
+            <p className="summary">
               Shanawaz’s engineering expertise and sharp system design thinking
               <br />
               transformed our backend architecture, boosting performance

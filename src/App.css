@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  scroll-behavior: smooth;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

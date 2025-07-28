@@ -1,30 +1,28 @@
 /* Root layout */
 .hero-section {
   width: 100%;
-  min-height: 100vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Barlow";
 }
 
 /* Navbar */
 .navbar {
   background-color: #111;
   border-radius: 40px 40px 40px 40px;
-  padding: 1rem 1rem;
-  margin-top: 20px  ;
-  margin-left: 50px  ;
-  margin-right: 50px  ;
+  padding: 0.5rem 0.5rem;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
-  padding: 0;
-  margin: 0;
+  padding: 1px;
+  margin: 1px;
 }
 
 .nav-item {
@@ -47,6 +45,11 @@
   background-color: #4eb29f;
 }
 
+.quote-img{
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering:optimizeQuality;
+}
 /* Main content layout */
 .hero-content {
   display: flex;
@@ -72,14 +75,19 @@
 }
 .title-img{
   width: 800px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering:optimizeQuality;
 }
 .testimonial {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-top: 300px;
   text-align: left;
   margin-left: 100px;
   color: #1a1a1a;
+  font-family: "Barlow";
+  
 }
 
 /* Right image + shape + experience */
@@ -98,6 +106,10 @@
   z-index: 1;
   bottom: 0;
   position: relative;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering:optimizeQuality;
+  transform: translateY(50px);
   /* position: relative; */
 }
 

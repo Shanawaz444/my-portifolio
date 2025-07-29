@@ -6,7 +6,7 @@ const HireMe: React.FC = () => {
         <div id="about-section" className="HireMe-section">
             <div className="flexing-image">
                 <img
-              src="/assets/Mask group.png"
+              src="assets/Mask group.png"
               alt="Shanawaz"
             />
             </div>

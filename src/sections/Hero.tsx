@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
         {/* Left side: Text */}
         <div className="hero-text">
           <div className="title-block">
-            <img src="/assets/title.png" alt="Shanawaz" className="title-img" />
+            <img src="assets/title.png" alt="Shanawaz" className="title-img" />
           </div>
 
           {/* Testimonial */}

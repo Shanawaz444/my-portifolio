@@ -8,7 +8,7 @@
     border-radius: 50px;
     z-index: 3;
     position: relative;
-    font-family: "Barlow";
+    font-family: "Open Sans"
 }
 .title-service {
     display: flex;
@@ -42,10 +42,101 @@
     margin-left: auto;
     margin-right: auto;
 }
-.swiper-box {
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: row;
+
+
+.services-reveal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 3rem 50px;
+}
+
+.reveal-card {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #4eb29f, #2a8377);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.reveal-card:hover {
+  box-shadow:
+    0 0 15px rgba(78, 178, 159, 0.6),
+    0 0 30px rgba(78, 178, 159, 0.4),
+    0 0 45px rgba(78, 178, 159, 0.2);
+  transform: translateY(-4px);
+}
+
+.reveal-front {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.reveal-front::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(78, 178, 159, 0.15), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.reveal-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.reveal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.reveal-back {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  background: #122c29; /* subtle dark contrast */
+  transition: bottom 0.4s ease;
+}
+
+.reveal-card:hover .reveal-back {
+  bottom: 0;
+}
+
+.reveal-skills-label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4eb29f;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.reveal-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  color: #d6f5f0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }

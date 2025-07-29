@@ -3,7 +3,7 @@ import "../styles/HireMe.css"
 
 const HireMe: React.FC = () => {
     return (
-        <div className="HireMe-section">
+        <div id="about-section" className="HireMe-section">
             <div className="flexing-image">
                 <img
               src="/assets/Mask group.png"

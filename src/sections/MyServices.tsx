@@ -1,20 +1,10 @@
 import React from "react";
 import "../styles/MyServices.css";
-import Card from "../components/cards/Cards";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Swiper as SwiperType } from "swiper";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import services from "./data/ServiceData";
 
 const MyServices: React.FC = () => {
   return (
@@ -35,7 +25,27 @@ const MyServices: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="swiper-box w-full px-4">
+
+      <div className="services-reveal-grid">
+      {services.map((service, idx) => (
+        <div className="reveal-card" key={idx}>
+          <div className="reveal-front">
+            <div className="reveal-icon">{service.icon}</div>
+            <div className="reveal-title">{service.title}</div>
+          </div>
+          <div className="reveal-back">
+            <div className="reveal-skills-label">Skills:</div>
+            <ul className="reveal-skills-list">
+              {service.skills.map((skill, i) => (
+                <li key={i}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+
+      {/* <div className="swiper-box w-full px-4">
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination]}
@@ -58,7 +68,7 @@ const MyServices: React.FC = () => {
             <Card />
           </SwiperSlide>
         </Swiper>
-      </div>
+      </div> */}
     </div>
   );
 };

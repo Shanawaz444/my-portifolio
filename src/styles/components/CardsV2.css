@@ -1,0 +1,59 @@
+/* From Uiverse.io by suleymanlaarabidev */ 
+.cardv2 {
+  width: 390px;
+  height: 254px;
+  background: #4eb29f;
+  transition: all 0.4s;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.cardv2:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  background: #2B6777;
+  font-family: "Open Sans"
+}
+
+.cardv2-first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+  color: white;
+}
+
+.cardv2:hover .cardv2-first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.cardv2-second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.cardv2:hover .cardv2-second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.8rem;
+  max-width: 400px;
+  padding: 10px;
+  color: white;
+  transform: rotate(0deg);
+}

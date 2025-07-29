@@ -8,6 +8,8 @@
 .LetsConnect-title {
     font-family: "Barlow";
     font-size: 3rem;
+    font-weight: 500;
+    color: #374151;
 }
 .letsConnect {
     color: #4eb29f;

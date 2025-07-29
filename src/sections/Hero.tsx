@@ -8,19 +8,23 @@ const scrollToSection = (id: string) => {
   }
 };
 
+const openResumeInNewTab = () => {
+  window.open("https://drive.google.com/file/d/1vuc8KFBxc4N85OFmJVSHtF1SBnZesjQG/view?usp=drive_link", "_blank");
+};
+
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       {/* Navigation Bar */}
       <nav className="navbar">
   <ul className="nav-links">
     <li className="nav-item" onClick={() => scrollToSection('home')}>Home</li>
-    <li className="nav-item" onClick={() => scrollToSection('about')}>About</li>
+    <li className="nav-item" onClick={() => scrollToSection('about-section')}>About</li>
     <li className="nav-item" onClick={() => scrollToSection('service-section')}>Service</li>
-    <li className="nav-item" onClick={() => scrollToSection('resume')}>Resume</li>
-    <li className="nav-item" onClick={() => scrollToSection('ProjectSection')}>Project</li>
-    <li className="nav-item" onClick={() => scrollToSection('contact')}>Contact</li>
+    <li className="nav-item" onClick={openResumeInNewTab}>Resume</li>
+    <li className="nav-item" onClick={() => scrollToSection('Project-section')}>Project</li>
+    <li className="nav-item" onClick={() => scrollToSection('footer-section')}>Contact</li>
   </ul>
 </nav>
 

@@ -1,7 +1,7 @@
 .experience-section {
     display: flex;
     flex-direction: column;
-    font-family: "Barlow";
+    font-family: "Open Sans"
 }
 .experience-section-title{
     margin-top: 50px;

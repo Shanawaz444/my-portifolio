@@ -1,0 +1,267 @@
+.footer-section {
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #272727;
+    border-radius: 20px 20px 0px 0px;
+    font-family: "Barlow";
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.footer-title btn {
+    padding-top: 100px;
+}
+
+.footer-title button {
+ height: 50px;
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 60px;
+ overflow: hidden;
+ background: white;
+ color: ghostwhite;
+}
+
+.footer-title  button span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+.footer-title  button:hover span {
+ color: black;
+}
+
+.footer-title  button::before,
+.footer-title  button::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.footer-title  button::before {
+ content: "";
+ background: #4eb29f;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.footer-title  button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+
+
+
+
+
+.footer-title-first {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.divider {  
+  height: 1px;
+  background-color:#4B5563;
+  margin: 1rem 0;
+}
+
+.footer-contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+}
+.footer-navigation-title, .footer-navigation-links {
+    margin-bottom: 10px;
+    color: white;
+}
+.footer-navigation-links {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ccc;
+  text-shadow: none;
+}
+
+.footer-navigation-links:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #4eb29f,
+               0 0 20px #4eb29f;
+  transform: scale(1.05);
+}
+.footer-navigation-title {
+    color: #4eb29f;
+    font-weight: 500;
+}
+.contact-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me-title, .contact-me-info {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+.contact-me-title {
+    color: #4eb29f;
+    font-weight: 500;
+}
+
+.connect-with-me {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.connect-with-metitle, .connect-with-me-info {
+    margin-bottom: 10px;
+    color: white;
+}
+.connect-with-me-title {
+    color: #4eb29f;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/* From Uiverse.io by Yaya12085 */ 
+.input-container {
+    margin-top: 10px;
+  position: relative;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  min-width: 200px;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.input-container input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.625rem 70px 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(69 90 100);
+  outline: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.invite-btn {
+  position: absolute;
+  width: 65px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: #4eb29f;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: .6s ease;
+}
+
+.invite-btn:hover {
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 8px;
+}
+
+.input-container input:placeholder-shown ~ .invite-btn {
+  pointer-events: none;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+.end-credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.made-with-info {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+/* Looping glow + subtle scale */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
+                 0 0 10px rgba(255, 255, 255, 0.1);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6),
+                 0 0 16px rgba(255, 255, 255, 0.3);
+    transform: scale(1.03);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
+                 0 0 10px rgba(255, 255, 255, 0.1);
+    transform: scale(1);
+  }
+}

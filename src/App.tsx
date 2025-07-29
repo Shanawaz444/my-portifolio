@@ -7,6 +7,7 @@ import Experience from './sections/Experience';
 import HireMe from './sections/HireMe';
 import LetsConnect from './sections/LetsConnect';
 import Projects from './sections/Projects';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <HireMe/>
       <Projects/>
       <LetsConnect/>
+      <Footer/>
     </Router>
   );
 }

@@ -15,6 +15,7 @@
     "ajv-keywords": "^5.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-parallax-tilt": "^1.7.303",
     "react-router-dom": "^7.7.1",
     "react-scripts": "^5.0.1",
     "swiper": "^11.2.10",

@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
           <div className="hero-image-block-flexing">
             {/* Background shape */}
             <img
-              src="/assets/hero-img.png"
+              src="assets/hero-img.png"
               alt="Shanawaz"
               className="profile-img"
             />

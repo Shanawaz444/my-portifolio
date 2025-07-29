@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Hero from './sections/Hero';
 import MyServices from './sections/MyServices';
 import './App.css';
@@ -12,10 +12,7 @@ import Footer from './sections/Footer';
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        {/* Future routes like About, Services, etc. */}
-      </Routes>
+      <Hero />
       <MyServices/>
       <Experience/>
       <HireMe/>
